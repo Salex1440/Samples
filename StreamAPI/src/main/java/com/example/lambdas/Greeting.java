@@ -1,5 +1,7 @@
-package com.example.anonymous;
+package com.example.lambdas;
 
 public interface Greeting {
-    void hello();
+    void helloSomeone();
+
+    void helloSomeone(String name);
 }

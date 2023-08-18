@@ -1,12 +1,17 @@
-package com.example.anonymous;
+package com.example.lambdas;
 
 public class AnonymousClasses {
 
     public static void main(String[] args) {
         Greeting anonymousGreeting = new Greeting() {
             @Override
-            public void hello() {
+            public void helloSomeone() {
                 System.out.println("Hello, anonymous!");
+            }
+
+            @Override
+            public void helloSomeone(String name) {
+                System.out.println("Hello, " + name + "!");
             }
         };
 
@@ -14,14 +19,14 @@ public class AnonymousClasses {
             private String name = "World";
 
             @Override
-            public void hello() {
+            public void helloSomeone() {
                 System.out.println("Hello, " + name + "!");
-                super.hello();
+                super.helloSomeone();
             }
         };
 
-        anonymousGreeting.hello();
-        anonymousGreetingImpl.hello();
+        anonymousGreeting.helloSomeone();
+        anonymousGreetingImpl.helloSomeone();
     }
 }
 

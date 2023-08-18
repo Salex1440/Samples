@@ -1,8 +1,13 @@
-package com.example.anonymous;
+package com.example.lambdas;
 
 public class GreetingImpl implements Greeting {
     @Override
-    public void hello() {
+    public void helloSomeone() {
         System.out.println("Hello Implementation!");
+    }
+
+    @Override
+    public void helloSomeone(String name) {
+        System.out.println("Hello, " + name + "!");
     }
 }
