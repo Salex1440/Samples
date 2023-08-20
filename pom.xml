@@ -9,6 +9,7 @@
   <url>http://maven.apache.org</url>
     <modules>
         <module>gRPC</module>
+        <module>SOLID</module>
     </modules>
     <properties>
     <maven.compiler.source>17</maven.compiler.source>
