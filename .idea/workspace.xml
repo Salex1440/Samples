@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Added main class">
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Minor fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SOLID/src/main/java/com/salex/solid/D/good/example/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/SOLID/src/main/java/com/salex/solid/D/good/example/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StreamAPI/src/main/java/com/example/streams/StreamApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/StreamAPI/src/main/java/com/example/streams/StreamApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692607654311</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Minor fixes">
+      <created>1692624248384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692624248385</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +203,8 @@
     <MESSAGE value="Created SOLID module with examples" />
     <MESSAGE value="Created Qualifier module" />
     <MESSAGE value="Added main class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added main class" />
+    <MESSAGE value="Minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -219,12 +226,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/StreamAPI/src/main/java/com/example/streams/StreamApi.java</url>
-          <line>32</line>
+          <line>21</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/StreamAPI/src/main/java/com/example/streams/StreamApi.java</url>
-          <line>12</line>
+          <line>9</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
