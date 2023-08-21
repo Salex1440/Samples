@@ -5,7 +5,7 @@ public class Shop {
     private Payment payment;
 
     public Shop(Payment payment) {
-
+        this.payment = payment;
     }
 
     public void doPayment(int amount) {
@@ -13,3 +13,7 @@ public class Shop {
     }
 
 }
+
+// Shop shop = new Shop(new Cash());
+// Shop shop = new Shop(new BankCard());
+// Shop shop = new Shop(new Nfc());
