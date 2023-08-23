@@ -32,8 +32,8 @@ public class ApiKeySecurityFilterChainConfig {
             .addFilterBefore(new ApiKeyFilter(authenticationManager()), BasicAuthenticationFilter.class)
             .authorizeHttpRequests(requests -> requests
                 .requestMatchers("/stranger").permitAll()
-                .requestMatchers("/user").hasRole(ApiKeyRoles.USER.name())
-                .requestMatchers("/admin").hasRole(ApiKeyRoles.ADMIN.name())
+                .requestMatchers("/user").hasAuthority(ApiKeyRoles.USER.name())
+                .requestMatchers("/admin").hasAuthority(ApiKeyRoles.ADMIN.name())
             );
 
         return http.build();
