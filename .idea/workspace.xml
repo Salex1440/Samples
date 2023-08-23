@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Minor fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOLID/src/main/java/com/salex/solid/D/good/example/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/SOLID/src/main/java/com/salex/solid/D/good/example/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/kek/Projects/idea/Samples/Qualifier/src/main/java/com",
+    "last_opened_file_path": "/home/salex/Projects/idea/Samples/SpringSecurity",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -60,6 +67,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SpringSecurity" />
       <recent name="$PROJECT_DIR$/Qualifier/src/main/java/com" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
