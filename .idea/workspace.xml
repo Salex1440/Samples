@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Minor fixes">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/pom.xml" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created SpringSecurity module">
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/SpringSecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/test/java/com/salex/springsecurity/SpringSecurityApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,48 +51,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/salex/Projects/idea/Samples/SpringSecurity",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "Docker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/salex/Downloads/spring-security/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/SpringSecurity" />
+      <recent name="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex" />
       <recent name="$PROJECT_DIR$/Qualifier/src/main/java/com" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gRPC/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamApi">
+  <component name="RunManager" selected="Application.SpringSecurityApplication">
     <configuration name="Functions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.streams.Functions" />
       <module name="StreamAPI" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.streams.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GrpcServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.grpc.server.GrpcServer" />
-      <module name="gRPC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.grpc.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,6 +114,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringSecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.springsecurity.SpringSecurityApplication" />
+      <module name="SpringSecurity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.springsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.streams.StreamApi" />
       <module name="StreamAPI" />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringSecurityApplication" />
         <item itemvalue="Application.StreamApi" />
         <item itemvalue="Application.Functions" />
         <item itemvalue="Application.LambdaExpressions" />
         <item itemvalue="Application.QualifierMain" />
-        <item itemvalue="Application.GrpcServer" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692624248385</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created SpringSecurity module">
+      <created>1692779658890</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692779658890</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +219,8 @@
     <MESSAGE value="Created Qualifier module" />
     <MESSAGE value="Added main class" />
     <MESSAGE value="Minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
+    <MESSAGE value="Created SpringSecurity module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created SpringSecurity module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
