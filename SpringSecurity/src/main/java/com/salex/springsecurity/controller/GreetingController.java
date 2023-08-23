@@ -12,4 +12,9 @@ public class GreetingController {
     public String greetStranger() {
         return "Hello, stranger!";
     }
+
+    @GetMapping("/user")
+    public String greetUser() {
+        return "Hello, user!";
+    }
 }

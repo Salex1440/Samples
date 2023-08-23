@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created SpringSecurity module">
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/SpringSecurityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/controller/GreetingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/test/java/com/salex/springsecurity/SpringSecurityApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created ApiKey authentication filter chain">
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/ApiKeySecurityFilterChainConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyAuthenticationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringSecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/controller/GreetingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692779658890</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed profile active. Created controller">
+      <created>1692782619496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692782619496</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,7 +224,9 @@
     <MESSAGE value="Added main class" />
     <MESSAGE value="Minor fixes" />
     <MESSAGE value="Created SpringSecurity module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created SpringSecurity module" />
+    <MESSAGE value="Fixed profile active. Created controller" />
+    <MESSAGE value="Created ApiKey authentication filter chain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created ApiKey authentication filter chain" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,6 +255,11 @@
           <url>file://$PROJECT_DIR$/StreamAPI/src/main/java/com/example/streams/StreamApi.java</url>
           <line>9</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyFilter.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
