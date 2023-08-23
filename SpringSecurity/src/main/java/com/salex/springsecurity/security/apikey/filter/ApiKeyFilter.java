@@ -1,11 +1,17 @@
 package com.salex.springsecurity.security.apikey.filter;
 
+import com.salex.springsecurity.security.apikey.ApiKeyRoles;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpHeaders;
 import org.springframework.lang.NonNull;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -18,6 +24,12 @@ public class ApiKeyFilter extends OncePerRequestFilter {
 
     private final String ALLOWED_KEY = "key";
 
+    private AuthenticationManager authenticationManager;
+
+    public ApiKeyFilter(AuthenticationManager authenticationManager) {
+        this.authenticationManager = authenticationManager;
+    }
+
     @Override
     protected void doFilterInternal(
         @NonNull HttpServletRequest request,
@@ -27,10 +39,10 @@ public class ApiKeyFilter extends OncePerRequestFilter {
         String auth = request.getHeader(HttpHeaders.AUTHORIZATION);
         if (auth != null && auth.startsWith(AUTHORITIES_KEY)) {
             String apiKey = auth.substring(AUTHORITIES_KEY.length());
-
-            if (apiKey.equals(ALLOWED_KEY)) {
-                ApiKeyAuthenticationToken authenticationToken = new ApiKeyAuthenticationToken(apiKey, AuthorityUtils.NO_AUTHORITIES);
-                SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+            UsernamePasswordAuthenticationToken token = new ApiKeyAuthenticationToken(apiKey, ApiKeyRoles.USER.getGrantedAuthorities());
+            Authentication authenticate = authenticationManager.authenticate(token);
+            if (authenticate.isAuthenticated()) {
+                SecurityContextHolder.getContext().setAuthentication(token);
             }
         }
 
