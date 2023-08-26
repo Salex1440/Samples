@@ -3,20 +3,33 @@ package com.salex.springsecurity.security.apikey;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import static com.salex.springsecurity.security.apikey.ApiKeyPermissions.READ;
+import static com.salex.springsecurity.security.apikey.ApiKeyPermissions.WRITE;
 
 public enum ApiKeyRoles {
-    USER("USER"),
-    ADMIN("ADMIN");
+    GUEST(List.of()),
+    USER(List.of(
+        READ)),
+    ADMIN(List.of(
+        READ,
+        WRITE));
 
-    private String role;
+    private final Collection<ApiKeyPermissions> permissions;
 
-    ApiKeyRoles(String role) {
-        this.role = role;
+    ApiKeyRoles(Collection<ApiKeyPermissions> permissions) {
+        this.permissions = permissions;
     }
 
     public List<GrantedAuthority> getGrantedAuthorities() {
-        return List.of(new SimpleGrantedAuthority(role));
+        List<GrantedAuthority> authorities = permissions.stream()
+            .map(permission -> new SimpleGrantedAuthority(permission.getPermission()))
+            .collect(Collectors.toList());
+        authorities.add(new SimpleGrantedAuthority("ROLE_" + this.name()));
+        return authorities;
     }
 
 }

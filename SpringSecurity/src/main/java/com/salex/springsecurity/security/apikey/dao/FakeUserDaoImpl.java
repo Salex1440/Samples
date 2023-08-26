@@ -1,14 +1,14 @@
 package com.salex.springsecurity.security.apikey.dao;
 
-import com.salex.springsecurity.security.apikey.ApiKeyRoles;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
+
+import static com.salex.springsecurity.security.apikey.ApiKeyRoles.ADMIN;
+import static com.salex.springsecurity.security.apikey.ApiKeyRoles.USER;
 
 @Repository("fake")
 public class FakeUserDaoImpl implements UserDao {
@@ -31,11 +31,11 @@ public class FakeUserDaoImpl implements UserDao {
             new User(
                 "userKey",
                 passwordEncoder.encode("userKey"),
-                ApiKeyRoles.USER.getGrantedAuthorities()),
-                new User(
-                    passwordEncoder.encode("adminKey"),
-                    "adminKey",
-                    ApiKeyRoles.ADMIN.getGrantedAuthorities())
+                USER.getGrantedAuthorities()),
+            new User(
+                "adminKey",
+                passwordEncoder.encode("adminKey"),
+                ADMIN.getGrantedAuthorities())
             );
     }
 

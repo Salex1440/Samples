@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Fix: minor fixes business logic in ApiKeyFilter">
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Separated permissions and roles">
+      <change afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/ApiKeyPermissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/ApiKeyRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/ApiKeyRoles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/ApiKeySecurityFilterChainConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/ApiKeySecurityFilterChainConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyAuthenticationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyAuthenticationToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/dao/FakeUserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/dao/FakeUserDaoImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -48,19 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/salex/Downloads/spring-security/pom.xml&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/salex/Downloads/spring-security/pom.xml",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.34182778",
+    "settings.editor.selected.configurable": "Docker"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/SpringSecurity" />
@@ -205,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692806504836</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix: minor fixes business logic in ApiKeyFilter">
+      <created>1692823594050</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692823594050</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +252,8 @@
     <MESSAGE value="Created ApiKey authentication filter chain" />
     <MESSAGE value="Modified ApiKey auth. Added roles. But sth went wrong" />
     <MESSAGE value="Fix: minor fixes business logic in ApiKeyFilter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: minor fixes business logic in ApiKeyFilter" />
+    <MESSAGE value="Separated permissions and roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated permissions and roles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -291,6 +302,11 @@
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.1.2/spring-security-core-6.1.2-sources.jar!/org/springframework/security/authentication/ProviderManager.java</url>
           <line>183</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyFilter.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
