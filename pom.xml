@@ -12,6 +12,7 @@
         <module>SOLID</module>
         <module>Qualifier</module>
         <module>SpringSecurity</module>
+        <module>Collections</module>
     </modules>
     <properties>
     <maven.compiler.source>17</maven.compiler.source>
