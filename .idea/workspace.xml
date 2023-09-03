@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Separated permissions and roles">
-      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/src/main/java/com/salex/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/src/main/java/com/salex/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/src/main/java/com/salex/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/repo/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/repo/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/service/PersonService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +73,13 @@
       <recent name="$PROJECT_DIR$/gRPC/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.collections.ListExample" />
-      <module name="Collections" />
+  <component name="RunManager" selected="Application.HateoasExampleApplication">
+    <configuration name="HateoasExampleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.hateoasexample.HateoasExampleApplication" />
+      <module name="hateoas-example" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.collections.*" />
+          <option name="PATTERN" value="com.salex.hateoasexample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HateoasExampleApplication" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MapExample" />
         <item itemvalue="Application.SetExample" />
         <item itemvalue="Application.QueueExample" />
-        <item itemvalue="Application.ListExample" />
       </list>
     </recent_temporary>
   </component>
@@ -308,6 +306,16 @@
           <url>file://$PROJECT_DIR$/SpringSecurity/src/main/java/com/salex/springsecurity/security/apikey/filter/ApiKeyFilter.java</url>
           <line>36</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/service/PersonService.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/service/PersonService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
