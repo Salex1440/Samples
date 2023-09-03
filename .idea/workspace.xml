@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Separated permissions and roles">
-      <change afterPath="$PROJECT_DIR$/Collections/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collections/collections.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collections/map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collections/src/main/java/com/salex/collections/ListExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collections/src/main/java/com/salex/collections/QueueExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collections/src/main/java/com/salex/collections/SetExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collections/src/main/java/com/salex/maps/MapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/src/main/java/com/salex/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/src/main/java/com/salex/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_dynamic_binding/src/main/java/com/salex/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/hateoas" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,13 +75,26 @@
       <recent name="$PROJECT_DIR$/gRPC/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MapExample">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.salex.collections.ListExample" />
       <module name="Collections" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.salex.collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.Main" />
+      <module name="static_dynamic_binding" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,26 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringSecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.springsecurity.SpringSecurityApplication" />
-      <module name="SpringSecurity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.springsecurity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MapExample" />
         <item itemvalue="Application.SetExample" />
         <item itemvalue="Application.QueueExample" />
         <item itemvalue="Application.ListExample" />
-        <item itemvalue="Application.SpringSecurityApplication" />
       </list>
     </recent_temporary>
   </component>
