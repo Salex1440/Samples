@@ -17,7 +17,8 @@ public class PersonRepository {
         if (persons.containsKey(person.getName())) {
             throw new RuntimeException("Person already exists!");
         }
-        return persons.put(person.getName(), person);
+        persons.put(person.getName(), person);
+        return person;
     }
 
     public Person getPersonByName(String name) {

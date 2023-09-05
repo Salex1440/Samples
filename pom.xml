@@ -12,7 +12,8 @@
         <module>SOLID</module>
         <module>Qualifier</module>
         <module>SpringSecurity</module>
-        <module>HATEOAS</module>
+        <module>Collections</module>
+        <module>static_dynamic_binding</module>
     </modules>
     <properties>
     <maven.compiler.source>17</maven.compiler.source>

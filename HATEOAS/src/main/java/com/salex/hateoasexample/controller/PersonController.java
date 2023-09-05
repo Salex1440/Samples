@@ -36,7 +36,7 @@ public class PersonController {
     }
 
     @GetMapping(path = "/all")
-    public List<Person> getPerson() {
+    public List<Person> getPersons() {
         return personService.getPersons();
     }
 
