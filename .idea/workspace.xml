@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Separated permissions and roles">
+      <change afterPath="$PROJECT_DIR$/Restfull/DELETE_request.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restfull/POST_request.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restfull/POST_response.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restfull/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restfull/client-server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restfull/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Restfull/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/repo/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/repo/PersonRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +33,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/hateoas" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -228,7 +240,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="featire/qualifier" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
