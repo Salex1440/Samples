@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created the Patterns module. Created a Singleton example">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/prototype/Prototype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/prototype/PrototypeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/prototype/PrototypeTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Prototype example">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/CreatorA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/CreatorB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/ProductA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/ProductB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/factory_method/CreatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -88,24 +92,12 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.generating.factory_method" />
       <recent name="com.salex.generating.prototype" />
       <recent name="com.salex.generating.singleton" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrototypeTest">
-    <configuration name="HateoasExampleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.hateoasexample.HateoasExampleApplication" />
-      <module name="hateoas-example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.hateoasexample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CreatorTest.factoryMethodTest">
     <configuration name="SingletonExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.salex.generating.singleton.SingletonExample" />
       <module name="Patterns" />
@@ -115,6 +107,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreatorTest.factoryMethodTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.generating.factory_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.generating.factory_method" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.generating.factory_method.CreatorTest" />
+      <option name="METHOD_NAME" value="factoryMethodTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreatorTest.factoryMethodTest" />
         <item itemvalue="JUnit.PrototypeTest" />
         <item itemvalue="JUnit.SingletonExampleTest.singletonTest" />
         <item itemvalue="JUnit.SingletonExampleTest" />
         <item itemvalue="Application.SingletonExample" />
-        <item itemvalue="Application.HateoasExampleApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694343885535</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Created a Prototype example">
+      <created>1694354883715</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694354883715</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,7 +309,8 @@
     <MESSAGE value="Separated permissions and roles" />
     <MESSAGE value="Created a new module. Added README.md." />
     <MESSAGE value="Created the Patterns module. Created a Singleton example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the Patterns module. Created a Singleton example" />
+    <MESSAGE value="Created a Prototype example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Prototype example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
