@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Separated permissions and roles">
-      <change afterPath="$PROJECT_DIR$/Restfull/DELETE_request.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restfull/POST_request.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restfull/POST_response.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restfull/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restfull/client-server.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restfull/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restfull/pom.xml" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created the Patterns module. Created a Singleton example">
+      <change afterPath="$PROJECT_DIR$/Patterns/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/singleton/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/singleton/SingletonExampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -27,6 +24,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,19 +59,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/salex/Downloads/spring-security/pom.xml&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34182778&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/salex/Downloads/spring-security/pom.xml",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.34182778",
+    "settings.editor.selected.configurable": "Docker"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/SpringSecurity" />
@@ -84,8 +84,17 @@
       <recent name="$PROJECT_DIR$/Collections" />
       <recent name="$PROJECT_DIR$/gRPC/src/main/java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.salex.generating.singleton" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.generating.singleton" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.HateoasExampleApplication">
+  <component name="RunManager" selected="JUnit.SingletonExampleTest.singletonTest">
     <configuration name="HateoasExampleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.salex.hateoasexample.HateoasExampleApplication" />
       <module name="hateoas-example" />
@@ -112,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.maps.MapExample" />
-      <module name="Collections" />
+    <configuration name="SingletonExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.generating.singleton.SingletonExample" />
+      <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.maps.*" />
+          <option name="PATTERN" value="com.salex.generating.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,39 +134,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueueExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.collections.QueueExample" />
-      <module name="Collections" />
+    <configuration name="SingletonExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.collections.*" />
+          <option name="PATTERN" value="com.salex.generating.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.salex.generating.singleton" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.generating.singleton.SingletonExampleTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.collections.SetExample" />
-      <module name="Collections" />
+    <configuration name="SingletonExampleTest.singletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.collections.*" />
+          <option name="PATTERN" value="com.salex.generating.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.salex.generating.singleton" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.generating.singleton.SingletonExampleTest" />
+      <option name="METHOD_NAME" value="singletonTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SingletonExampleTest.singletonTest" />
+        <item itemvalue="JUnit.SingletonExampleTest" />
+        <item itemvalue="Application.SingletonExample" />
         <item itemvalue="Application.HateoasExampleApplication" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MapExample" />
-        <item itemvalue="Application.SetExample" />
-        <item itemvalue="Application.QueueExample" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692823594050</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Created a new module. Added README.md.">
+      <created>1694027237535</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694027237535</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,7 +285,9 @@
     <MESSAGE value="Modified ApiKey auth. Added roles. But sth went wrong" />
     <MESSAGE value="Fix: minor fixes business logic in ApiKeyFilter" />
     <MESSAGE value="Separated permissions and roles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separated permissions and roles" />
+    <MESSAGE value="Created a new module. Added README.md." />
+    <MESSAGE value="Created the Patterns module. Created a Singleton example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Patterns module. Created a Singleton example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -328,6 +351,11 @@
           <url>file://$PROJECT_DIR$/HATEOAS/src/main/java/com/salex/hateoasexample/service/PersonService.java</url>
           <line>33</line>
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/singleton/SingletonExampleTest.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
