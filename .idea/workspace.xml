@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Composite pattern example">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/decorator/Decorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/decorator/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/decorator/ServiceDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/decorator/ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/decorator/DecoratorTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Proxy pattern example. Minor fixes.">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/proxy/Proxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/proxy/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/proxy/SubjectImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/proxy/ProxyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/Abstraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/Abstraction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/composite/AbstractFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/composite/AbstractFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/decorator/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/decorator/Decorator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -91,30 +94,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.structural.proxy" />
       <recent name="com.salex.structural.decorator" />
       <recent name="com.salex.structural.composite" />
       <recent name="com.salex.structural.bridge" />
       <recent name="com.salex.structural.adapter" />
-      <recent name="com.salex.generating.abstract_factory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DecoratorTest.test">
-    <configuration name="AbstractFactoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.creational.abstract_factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.generating.abstract_factory" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.creational.abstract_factory.AbstractFactoryTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProxyTest.test">
     <configuration name="AdapterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -179,13 +166,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProxyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.structural.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.structural.proxy" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.structural.proxy.ProxyTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProxyTest.test" />
         <item itemvalue="JUnit.DecoratorTest.test" />
         <item itemvalue="JUnit.CompositeTest.test" />
         <item itemvalue="JUnit.BridgeTest.test" />
         <item itemvalue="JUnit.AdapterTest.test" />
-        <item itemvalue="JUnit.AbstractFactoryTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694425887806</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Created a Decorator pattern example">
+      <created>1694426747882</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1694426747882</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -356,7 +366,9 @@
     <MESSAGE value="Renamed package from generating to creational. Created a structural package and Adapter pattern example" />
     <MESSAGE value="Created a Bridge pattern example" />
     <MESSAGE value="Created a Composite pattern example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Composite pattern example" />
+    <MESSAGE value="Created a Decorator pattern example" />
+    <MESSAGE value="Created a Proxy pattern example. Minor fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Proxy pattern example. Minor fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
