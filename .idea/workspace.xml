@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a ChainOfResponsibility pattern example.">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/command/CommandImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/command/Foo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/command/CommandTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Command pattern example.">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/From.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Row.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Select.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Where.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/interpreter/InterpreterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,14 +93,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.behavioral.interpreter" />
       <recent name="com.salex.behavioral.command" />
       <recent name="com.salex.behavioral.chain_of_responsibility" />
       <recent name="com.salex.structural.flyweight" />
       <recent name="com.salex.structural.facade" />
-      <recent name="com.salex.structural.proxy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChainOfResponsibilityTest.test">
+  <component name="RunManager" selected="JUnit.InterpreterTest.test">
     <configuration name="ChainOfResponsibilityTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -108,22 +111,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.salex.behavioral.chain_of_responsibility" />
       <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.chain_of_responsibility.ChainOfResponsibilityTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DecoratorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.structural.decorator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.structural.decorator" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.structural.decorator.DecoratorTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -162,6 +149,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InterpreterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.behavioral.interpreter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.interpreter" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.interpreter.InterpreterTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProxyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -180,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InterpreterTest.test" />
         <item itemvalue="JUnit.ChainOfResponsibilityTest.test" />
         <item itemvalue="JUnit.FlyweightTest.test" />
         <item itemvalue="JUnit.FacadeTest.operate" />
         <item itemvalue="JUnit.ProxyTest.test" />
-        <item itemvalue="JUnit.DecoratorTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694442432004</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Created a Command pattern example.">
+      <created>1694458968799</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1694458968799</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,7 +405,8 @@
     <MESSAGE value="Created a Facade pattern example." />
     <MESSAGE value="Created a Flyweight pattern example." />
     <MESSAGE value="Created a ChainOfResponsibility pattern example." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a ChainOfResponsibility pattern example." />
+    <MESSAGE value="Created a Command pattern example." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Command pattern example." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
