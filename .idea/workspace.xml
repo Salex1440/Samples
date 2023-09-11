@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Facade pattern example.">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/BrickHouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/HouseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/PanelHouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/flyweight/FlyweightTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a ChainOfResponsibility pattern example.">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/AuthenticationValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/AuthorityValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/BlockValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/dao/ResourceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/model/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/model/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/chain_of_responsibility/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/chain_of_responsibility/ChainOfResponsibilityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,24 +96,24 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.behavioral.chain_of_responsibility" />
       <recent name="com.salex.structural.flyweight" />
       <recent name="com.salex.structural.facade" />
       <recent name="com.salex.structural.proxy" />
       <recent name="com.salex.structural.decorator" />
-      <recent name="com.salex.structural.composite" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FlyweightTest.test">
-    <configuration name="CompositeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ChainOfResponsibilityTest.test">
+    <configuration name="ChainOfResponsibilityTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.structural.composite.*" />
+          <option name="PATTERN" value="com.salex.behavioral.chain_of_responsibility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.structural.composite" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.structural.composite.CompositeTest" />
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.chain_of_responsibility" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.chain_of_responsibility.ChainOfResponsibilityTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -181,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChainOfResponsibilityTest.test" />
         <item itemvalue="JUnit.FlyweightTest.test" />
         <item itemvalue="JUnit.FacadeTest.operate" />
         <item itemvalue="JUnit.ProxyTest.test" />
         <item itemvalue="JUnit.DecoratorTest.test" />
-        <item itemvalue="JUnit.CompositeTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694428924394</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Created a Flyweight pattern example.">
+      <created>1694431174358</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1694431174359</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,7 +392,9 @@
     <MESSAGE value="Created a Decorator pattern example" />
     <MESSAGE value="Created a Proxy pattern example. Minor fixes." />
     <MESSAGE value="Created a Facade pattern example." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Facade pattern example." />
+    <MESSAGE value="Created a Flyweight pattern example." />
+    <MESSAGE value="Created a ChainOfResponsibility pattern example." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a ChainOfResponsibility pattern example." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
