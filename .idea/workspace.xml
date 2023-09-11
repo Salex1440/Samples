@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Bridge pattern example">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/Abstraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/ConcreteAbstraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/ConcreteImplementor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/Implementor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/bridge/BridgeTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Composite pattern example">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/composite/AbstractFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/composite/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/composite/Folder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/composite/CompositeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,14 +90,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.structural.composite" />
       <recent name="com.salex.structural.bridge" />
       <recent name="com.salex.structural.adapter" />
       <recent name="com.salex.generating.abstract_factory" />
       <recent name="com.salex.generating.builder" />
-      <recent name="com.salex.generating.factory_method" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BridgeTest.test">
+  <component name="RunManager" selected="JUnit.CompositeTest.test">
     <configuration name="AbstractFactoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -163,17 +162,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatorTest.factoryMethodTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CompositeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.creational.factory_method.*" />
+          <option name="PATTERN" value="com.salex.structural.composite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.generating.factory_method" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.creational.factory_method.CreatorTest" />
-      <option name="METHOD_NAME" value="factoryMethodTest" />
+      <option name="PACKAGE_NAME" value="com.salex.structural.composite" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.structural.composite.CompositeTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CompositeTest.test" />
         <item itemvalue="JUnit.BridgeTest.test" />
         <item itemvalue="JUnit.AdapterTest.test" />
         <item itemvalue="JUnit.AbstractFactoryTest.test" />
         <item itemvalue="JUnit.BuilderTest.test" />
-        <item itemvalue="JUnit.CreatorTest.factoryMethodTest" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694420257786</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created a Bridge pattern example">
+      <created>1694422401152</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1694422401152</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,7 +347,8 @@
     <MESSAGE value="Created a Builder example" />
     <MESSAGE value="Renamed package from generating to creational. Created a structural package and Adapter pattern example" />
     <MESSAGE value="Created a Bridge pattern example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Bridge pattern example" />
+    <MESSAGE value="Created a Composite pattern example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Composite pattern example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -410,6 +417,11 @@
           <url>file://$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/singleton/SingletonExampleTest.java</url>
           <line>18</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/composite/CompositeTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
