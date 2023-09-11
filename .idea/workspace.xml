@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Proxy pattern example. Minor fixes.">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/facade/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/facade/Service1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/facade/Service2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/facade/FacadeTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Facade pattern example.">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/BrickHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/HouseFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/flyweight/PanelHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/flyweight/FlyweightTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,30 +91,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.structural.flyweight" />
       <recent name="com.salex.structural.facade" />
       <recent name="com.salex.structural.proxy" />
       <recent name="com.salex.structural.decorator" />
       <recent name="com.salex.structural.composite" />
-      <recent name="com.salex.structural.bridge" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FacadeTest.operate">
-    <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.structural.bridge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.structural.bridge" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.structural.bridge.BridgeTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FlyweightTest.test">
     <configuration name="CompositeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -162,6 +147,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FlyweightTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.structural.flyweight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.structural.flyweight" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.structural.flyweight.FlyweightTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProxyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -180,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FlyweightTest.test" />
         <item itemvalue="JUnit.FacadeTest.operate" />
         <item itemvalue="JUnit.ProxyTest.test" />
         <item itemvalue="JUnit.DecoratorTest.test" />
         <item itemvalue="JUnit.CompositeTest.test" />
-        <item itemvalue="JUnit.BridgeTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694428635891</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Created a Facade pattern example.">
+      <created>1694428924394</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1694428924394</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,7 +379,8 @@
     <MESSAGE value="Created a Composite pattern example" />
     <MESSAGE value="Created a Decorator pattern example" />
     <MESSAGE value="Created a Proxy pattern example. Minor fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Proxy pattern example. Minor fixes." />
+    <MESSAGE value="Created a Facade pattern example." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Facade pattern example." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
