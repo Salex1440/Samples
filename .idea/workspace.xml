@@ -4,37 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Builder example">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/Adapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/AdapterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/FinalClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/adapter/AdapterTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Bridge pattern example">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/Abstraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/ConcreteAbstraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/ConcreteImplementor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/bridge/Implementor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/bridge/BridgeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/Factory1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/Factory1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/Factory2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/Factory2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductA1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductA2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductB1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductB2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/builder/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/builder/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/builder/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/builder/Sex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/Creator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/CreatorA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/CreatorA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/CreatorB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/CreatorB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/ProductA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/ProductA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/ProductB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/ProductB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/prototype/Prototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/prototype/Prototype.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/prototype/PrototypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/prototype/PrototypeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/singleton/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/abstract_factory/AbstractFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/abstract_factory/AbstractFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/builder/BuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/builder/BuilderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/factory_method/CreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/factory_method/CreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/prototype/PrototypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/prototype/PrototypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/singleton/SingletonExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/singleton/SingletonExampleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +91,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.structural.bridge" />
       <recent name="com.salex.structural.adapter" />
       <recent name="com.salex.generating.abstract_factory" />
       <recent name="com.salex.generating.builder" />
       <recent name="com.salex.generating.factory_method" />
-      <recent name="com.salex.generating.prototype" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AdapterTest.test">
+  <component name="RunManager" selected="JUnit.BridgeTest.test">
     <configuration name="AbstractFactoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -149,6 +125,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.salex.structural.adapter" />
       <option name="MAIN_CLASS_NAME" value="com.salex.structural.adapter.AdapterTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BridgeTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.structural.bridge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.structural.bridge" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.structural.bridge.BridgeTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -187,28 +179,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrototypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.creational.prototype.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.generating.prototype" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.creational.prototype.PrototypeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BridgeTest.test" />
         <item itemvalue="JUnit.AdapterTest.test" />
         <item itemvalue="JUnit.AbstractFactoryTest.test" />
         <item itemvalue="JUnit.BuilderTest.test" />
         <item itemvalue="JUnit.CreatorTest.factoryMethodTest" />
-        <item itemvalue="JUnit.PrototypeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694371949099</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Renamed package from generating to creational. Created a structural package and Adapter pattern example">
+      <created>1694420257786</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694420257786</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -355,7 +339,9 @@
     <MESSAGE value="Created a Prototype example" />
     <MESSAGE value="Created a FactoryMethod example" />
     <MESSAGE value="Created a Builder example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Builder example" />
+    <MESSAGE value="Renamed package from generating to creational. Created a structural package and Adapter pattern example" />
+    <MESSAGE value="Created a Bridge pattern example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a Bridge pattern example" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
