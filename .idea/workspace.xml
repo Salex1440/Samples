@@ -5,18 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Builder example">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/Factory1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/Factory2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/abstract_factory/AbstractFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/AdapterImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/structural/adapter/FinalClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/structural/adapter/AdapterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/Factory1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/Factory1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/Factory2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/Factory2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductA1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductA2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductA2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductB1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/abstract_factory/model/ProductB2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/abstract_factory/model/ProductB2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/builder/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/builder/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/builder/Sex.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/builder/Sex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/CreatorA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/CreatorA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/CreatorB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/CreatorB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/ProductA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/ProductA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/factory_method/ProductB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/factory_method/ProductB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/prototype/Prototype.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/prototype/Prototype.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/prototype/PrototypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/prototype/PrototypeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/generating/singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/creational/singleton/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/abstract_factory/AbstractFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/abstract_factory/AbstractFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/builder/BuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/builder/BuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/factory_method/CreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/factory_method/CreatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/prototype/PrototypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/prototype/PrototypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/singleton/SingletonExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/singleton/SingletonExampleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,21 +82,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/salex/Downloads/spring-security/pom.xml",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.34182778",
-    "settings.editor.selected.configurable": "Docker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/salex/Downloads/spring-security/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34182778&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/SpringSecurity" />
@@ -97,24 +115,40 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.structural.adapter" />
       <recent name="com.salex.generating.abstract_factory" />
       <recent name="com.salex.generating.builder" />
       <recent name="com.salex.generating.factory_method" />
       <recent name="com.salex.generating.prototype" />
-      <recent name="com.salex.generating.singleton" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AbstractFactoryTest.test">
+  <component name="RunManager" selected="JUnit.AdapterTest.test">
     <configuration name="AbstractFactoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.generating.abstract_factory.*" />
+          <option name="PATTERN" value="com.salex.creational.abstract_factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.salex.generating.abstract_factory" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.generating.abstract_factory.AbstractFactoryTest" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.creational.abstract_factory.AbstractFactoryTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdapterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.structural.adapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.structural.adapter" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.structural.adapter.AdapterTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -125,12 +159,12 @@
       <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.generating.builder.*" />
+          <option name="PATTERN" value="com.salex.creational.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.salex.generating.builder" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.generating.builder.BuilderTest" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.creational.builder.BuilderTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -141,12 +175,12 @@
       <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.generating.factory_method.*" />
+          <option name="PATTERN" value="com.salex.creational.factory_method.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.salex.generating.factory_method" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.generating.factory_method.CreatorTest" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.creational.factory_method.CreatorTest" />
       <option name="METHOD_NAME" value="factoryMethodTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -157,40 +191,24 @@
       <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.generating.prototype.*" />
+          <option name="PATTERN" value="com.salex.creational.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.salex.generating.prototype" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.generating.prototype.PrototypeTest" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.creational.prototype.PrototypeTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingletonExampleTest.singletonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.generating.singleton.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.generating.singleton" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.generating.singleton.SingletonExampleTest" />
-      <option name="METHOD_NAME" value="singletonTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdapterTest.test" />
         <item itemvalue="JUnit.AbstractFactoryTest.test" />
         <item itemvalue="JUnit.BuilderTest.test" />
         <item itemvalue="JUnit.CreatorTest.factoryMethodTest" />
         <item itemvalue="JUnit.PrototypeTest" />
-        <item itemvalue="JUnit.SingletonExampleTest.singletonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -403,7 +421,7 @@
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Patterns/src/test/java/com/salex/generating/singleton/SingletonExampleTest.java</url>
+          <url>file://$PROJECT_DIR$/Patterns/src/test/java/com/salex/creational/singleton/SingletonExampleTest.java</url>
           <line>18</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
