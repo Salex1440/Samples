@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of Observer pattern">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/observer/ObserverImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/observer/ObserverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/state/Lamp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/state/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/state/StateOff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/state/StateOn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/state/StateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,46 +91,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.behavioral.state" />
       <recent name="com.salex.behavioral.observer" />
       <recent name="com.salex.behavioral.memento" />
       <recent name="com.salex.behavioral.mediator" />
       <recent name="com.salex.behavioral.iterator" />
-      <recent name="com.salex.behavioral.interpreter" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ObserverTest.test">
-    <configuration name="InterpreterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.interpreter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.interpreter" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.interpreter.InterpreterTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IteratorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.iterator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.iterator" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.iterator.IteratorTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StateTest">
     <configuration name="MediatorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -178,13 +147,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.behavioral.state.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.state" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.state.StateTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.behavioral.state.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.state" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.state.StateTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StateTest" />
+        <item itemvalue="JUnit.StateTest.test" />
         <item itemvalue="JUnit.ObserverTest.test" />
         <item itemvalue="JUnit.MementoTest.test" />
         <item itemvalue="JUnit.MediatorTest.test" />
-        <item itemvalue="JUnit.IteratorTest.test" />
-        <item itemvalue="JUnit.InterpreterTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -365,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694517308801</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Created example of Observer pattern">
+      <created>1694518769305</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1694518769305</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,6 +503,16 @@
           <url>file://$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/observer/ObserverImpl.java</url>
           <line>12</line>
           <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/state/StateTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/state/Lamp.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
