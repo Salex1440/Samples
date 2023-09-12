@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of Strategy pattern">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/template_method/FactoryWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/template_method/OfficeWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/template_method/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/template_method/TemplateMethodTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of Template method pattern">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/GetType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/visitor/VisitorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/Strategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -91,30 +92,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.behavioral.visitor" />
       <recent name="com.salex.behavioral.template_method" />
       <recent name="com.salex.behavioral.strategy" />
       <recent name="com.salex.behavioral.state" />
       <recent name="com.salex.behavioral.observer" />
-      <recent name="com.salex.behavioral.memento" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TemplateMethodTest.test">
-    <configuration name="ObserverTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.observer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.observer" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.observer.ObserverTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.VisitorTest.test">
     <configuration name="StateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -178,13 +163,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VisitorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.behavioral.visitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.visitor" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.visitor.VisitorTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VisitorTest.test" />
         <item itemvalue="JUnit.TemplateMethodTest.test" />
         <item itemvalue="JUnit.StrategyTest.test" />
         <item itemvalue="JUnit.StateTest" />
         <item itemvalue="JUnit.StateTest.test" />
-        <item itemvalue="JUnit.ObserverTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694522999896</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Created example of Template method pattern">
+      <created>1694523977958</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1694523977958</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor fixes" />
     <MESSAGE value="Created SpringSecurity module" />
     <MESSAGE value="Fixed profile active. Created controller" />
     <MESSAGE value="Created ApiKey authentication filter chain" />
@@ -431,7 +438,8 @@
     <MESSAGE value="Created example of Memento pattern" />
     <MESSAGE value="Created example of Observer pattern" />
     <MESSAGE value="Created example of Strategy pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created example of Strategy pattern" />
+    <MESSAGE value="Created example of Template method pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created example of Template method pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
