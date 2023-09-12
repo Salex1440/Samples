@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of Observer pattern">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/Strategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/StrategyA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/StrategyB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/strategy/StrategyTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of Strategy pattern">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/template_method/FactoryWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/template_method/OfficeWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/template_method/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/template_method/TemplateMethodTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/strategy/Strategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,30 +91,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.behavioral.template_method" />
       <recent name="com.salex.behavioral.strategy" />
       <recent name="com.salex.behavioral.state" />
       <recent name="com.salex.behavioral.observer" />
       <recent name="com.salex.behavioral.memento" />
-      <recent name="com.salex.behavioral.mediator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StrategyTest.test">
-    <configuration name="MementoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.memento.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.memento" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.memento.MementoTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TemplateMethodTest.test">
     <configuration name="ObserverTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -178,13 +162,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TemplateMethodTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.behavioral.template_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.template_method" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.template_method.TemplateMethodTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TemplateMethodTest.test" />
         <item itemvalue="JUnit.StrategyTest.test" />
         <item itemvalue="JUnit.StateTest" />
         <item itemvalue="JUnit.StateTest.test" />
         <item itemvalue="JUnit.ObserverTest.test" />
-        <item itemvalue="JUnit.MementoTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694518769305</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Created example of Strategy pattern">
+      <created>1694522999896</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1694522999896</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -399,7 +406,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added main class" />
     <MESSAGE value="Minor fixes" />
     <MESSAGE value="Created SpringSecurity module" />
     <MESSAGE value="Fixed profile active. Created controller" />
@@ -424,7 +430,8 @@
     <MESSAGE value="Created example of Iterator pattern" />
     <MESSAGE value="Created example of Memento pattern" />
     <MESSAGE value="Created example of Observer pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created example of Observer pattern" />
+    <MESSAGE value="Created example of Strategy pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created example of Strategy pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
