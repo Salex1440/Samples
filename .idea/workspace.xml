@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Command pattern example.">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/iterator/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/iterator/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/iterator/IteratorTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of Iterator pattern">
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/mediator/Colleague.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/mediator/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/mediator/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/mediator/ManagerMediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/mediator/Mediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/mediator/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/mediator/MediatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -89,14 +93,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.behavioral.mediator" />
       <recent name="com.salex.behavioral.iterator" />
       <recent name="com.salex.behavioral.interpreter" />
       <recent name="com.salex.behavioral.command" />
       <recent name="com.salex.behavioral.chain_of_responsibility" />
-      <recent name="com.salex.structural.flyweight" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IteratorTest.test">
+  <component name="RunManager" selected="JUnit.MediatorTest.test">
     <configuration name="ChainOfResponsibilityTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -108,22 +112,6 @@
       <option name="PACKAGE_NAME" value="com.salex.behavioral.chain_of_responsibility" />
       <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.chain_of_responsibility.ChainOfResponsibilityTest" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FacadeTest.operate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.structural.facade.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.salex.structural.facade" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.structural.facade.FacadeTest" />
-      <option name="METHOD_NAME" value="operate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,13 +165,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MediatorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patterns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.behavioral.mediator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.mediator" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.mediator.MediatorTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MediatorTest.test" />
         <item itemvalue="JUnit.IteratorTest.test" />
         <item itemvalue="JUnit.InterpreterTest.test" />
         <item itemvalue="JUnit.ChainOfResponsibilityTest.test" />
         <item itemvalue="JUnit.FlyweightTest.test" />
-        <item itemvalue="JUnit.FacadeTest.operate" />
       </list>
     </recent_temporary>
   </component>
@@ -350,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694458968799</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Created example of Iterator pattern">
+      <created>1694502071246</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1694502071246</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created gRPC module" />
     <MESSAGE value="Created SOLID module with examples" />
     <MESSAGE value="Created Qualifier module" />
     <MESSAGE value="Added main class" />
@@ -402,7 +412,8 @@
     <MESSAGE value="Created a Flyweight pattern example." />
     <MESSAGE value="Created a ChainOfResponsibility pattern example." />
     <MESSAGE value="Created a Command pattern example." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a Command pattern example." />
+    <MESSAGE value="Created example of Iterator pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created example of Iterator pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
