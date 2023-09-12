@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a Command pattern example.">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/From.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Row.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Select.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/interpreter/Where.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/interpreter/InterpreterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/iterator/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/iterator/IteratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -93,14 +89,14 @@
       <recent name="com.salex.generating.singleton" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.salex.behavioral.iterator" />
       <recent name="com.salex.behavioral.interpreter" />
       <recent name="com.salex.behavioral.command" />
       <recent name="com.salex.behavioral.chain_of_responsibility" />
       <recent name="com.salex.structural.flyweight" />
-      <recent name="com.salex.structural.facade" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InterpreterTest.test">
+  <component name="RunManager" selected="JUnit.IteratorTest.test">
     <configuration name="ChainOfResponsibilityTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
@@ -165,16 +161,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProxyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IteratorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patterns" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.structural.proxy.*" />
+          <option name="PATTERN" value="com.salex.behavioral.iterator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.structural.proxy" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.structural.proxy.ProxyTest" />
+      <option name="PACKAGE_NAME" value="com.salex.behavioral.iterator" />
+      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.iterator.IteratorTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -183,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IteratorTest.test" />
         <item itemvalue="JUnit.InterpreterTest.test" />
         <item itemvalue="JUnit.ChainOfResponsibilityTest.test" />
         <item itemvalue="JUnit.FlyweightTest.test" />
         <item itemvalue="JUnit.FacadeTest.operate" />
-        <item itemvalue="JUnit.ProxyTest.test" />
       </list>
     </recent_temporary>
   </component>
