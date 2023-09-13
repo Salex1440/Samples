@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of Template method pattern">
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/GetType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/visitor/Visitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Patterns/src/test/java/com/salex/behavioral/visitor/VisitorTest.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a new module">
+      <change afterPath="$PROJECT_DIR$/Exceptions/Exceptions hierarchy.drawio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/checked/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/unchecked/Example.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,6 +81,7 @@
       <recent name="$PROJECT_DIR$/Qualifier/src/main/java/com" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Exceptions" />
       <recent name="$PROJECT_DIR$/Collections" />
       <recent name="$PROJECT_DIR$/gRPC/src/main/java" />
     </key>
@@ -99,34 +100,29 @@
       <recent name="com.salex.behavioral.observer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VisitorTest.test">
-    <configuration name="StateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
+  <component name="RunManager" selected="Application.com.salex.checked.Example">
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.unchecked.Example" />
+      <module name="Exceptions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.state.*" />
+          <option name="PATTERN" value="com.salex.unchecked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.state" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.state.StateTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
+    <configuration name="com.salex.checked.Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.checked.Example" />
+      <module name="Exceptions" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.state.*" />
+          <option name="PATTERN" value="com.salex.checked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.state" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.state.StateTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.salex.checked.Example" />
+        <item itemvalue="Application.Example" />
         <item itemvalue="JUnit.VisitorTest.test" />
         <item itemvalue="JUnit.TemplateMethodTest.test" />
         <item itemvalue="JUnit.StrategyTest.test" />
-        <item itemvalue="JUnit.StateTest" />
-        <item itemvalue="JUnit.StateTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -387,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694523977958</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Created a new module">
+      <created>1694589943700</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1694589943700</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -414,7 +417,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created SpringSecurity module" />
     <MESSAGE value="Fixed profile active. Created controller" />
     <MESSAGE value="Created ApiKey authentication filter chain" />
     <MESSAGE value="Modified ApiKey auth. Added roles. But sth went wrong" />
@@ -439,7 +441,8 @@
     <MESSAGE value="Created example of Observer pattern" />
     <MESSAGE value="Created example of Strategy pattern" />
     <MESSAGE value="Created example of Template method pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created example of Template method pattern" />
+    <MESSAGE value="Created a new module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a new module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
