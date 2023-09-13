@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a new module">
-      <change afterPath="$PROJECT_DIR$/Exceptions/Exceptions hierarchy.drawio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/checked/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/unchecked/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exceptions/src/main/java/com/salex/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/org/example/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

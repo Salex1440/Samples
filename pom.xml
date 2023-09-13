@@ -18,6 +18,7 @@
         <module>Restfull</module>
         <module>Patterns</module>
         <module>Exceptions</module>
+        <module>Concurrency</module>
     </modules>
     <properties>
     <maven.compiler.source>17</maven.compiler.source>
