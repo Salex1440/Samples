@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a new module">
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/AnonymousExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/DaemonThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/JoinThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/LambdaExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/RunnableExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/SleepExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/StoppableThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/ThreadExample.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created examples of working with Thread">
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/memory_model/CustomRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/memory_model/SeparateRunnablesExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/memory_model/SharedRunnableExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Concurrency/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +97,7 @@
       <recent name="com.salex.behavioral.observer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JoinThread">
+  <component name="RunManager" selected="Application.SharedRunnableExample">
     <configuration name="DaemonThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.DaemonThread" />
       <module name="Concurrency" />
@@ -130,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.LambdaExample" />
+    <configuration name="SeparateRunnablesExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.memory_model.SeparateRunnablesExample" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.thread_examples.*" />
+          <option name="PATTERN" value="com.salex.memory_model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SleepExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.SleepExample" />
+    <configuration name="SharedRunnableExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.memory_model.SharedRunnableExample" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.thread_examples.*" />
+          <option name="PATTERN" value="com.salex.memory_model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SharedRunnableExample" />
+        <item itemvalue="Application.SeparateRunnablesExample" />
         <item itemvalue="Application.JoinThread" />
         <item itemvalue="Application.DaemonThread" />
         <item itemvalue="Application.StoppableThread" />
-        <item itemvalue="Application.SleepExample" />
-        <item itemvalue="Application.LambdaExample" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694589943700</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Created examples of working with Thread">
+      <created>1694678618370</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1694678618370</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,7 +412,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed profile active. Created controller" />
     <MESSAGE value="Created ApiKey authentication filter chain" />
     <MESSAGE value="Modified ApiKey auth. Added roles. But sth went wrong" />
     <MESSAGE value="Fix: minor fixes business logic in ApiKeyFilter" />
@@ -436,7 +436,8 @@
     <MESSAGE value="Created example of Strategy pattern" />
     <MESSAGE value="Created example of Template method pattern" />
     <MESSAGE value="Created a new module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new module" />
+    <MESSAGE value="Created examples of working with Thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created examples of working with Thread" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
