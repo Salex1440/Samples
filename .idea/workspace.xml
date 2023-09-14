@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created a new module">
-      <change afterPath="$PROJECT_DIR$/Concurrency/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/AnonymousExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/DaemonThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/JoinThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/LambdaExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/RunnableExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/SleepExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/StoppableThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_examples/ThreadExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Concurrency/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +103,13 @@
       <recent name="com.salex.behavioral.observer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.salex.checked.Example">
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.unchecked.Example" />
-      <module name="Exceptions" />
+  <component name="RunManager" selected="Application.JoinThread">
+    <configuration name="DaemonThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.DaemonThread" />
+      <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.unchecked.*" />
+          <option name="PATTERN" value="com.salex.thread_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.salex.checked.Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.checked.Example" />
-      <module name="Exceptions" />
+    <configuration name="JoinThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.JoinThread" />
+      <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.checked.*" />
+          <option name="PATTERN" value="com.salex.thread_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,61 +130,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StrategyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
+    <configuration name="LambdaExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.LambdaExample" />
+      <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.strategy.*" />
+          <option name="PATTERN" value="com.salex.thread_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.strategy" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.strategy.StrategyTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateMethodTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
+    <configuration name="SleepExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.SleepExample" />
+      <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.template_method.*" />
+          <option name="PATTERN" value="com.salex.thread_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.template_method" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.template_method.TemplateMethodTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisitorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Patterns" />
+    <configuration name="StoppableThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.StoppableThread" />
+      <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.behavioral.visitor.*" />
+          <option name="PATTERN" value="com.salex.thread_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.salex.behavioral.visitor" />
-      <option name="MAIN_CLASS_NAME" value="com.salex.behavioral.visitor.VisitorTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.salex.checked.Example" />
-        <item itemvalue="Application.Example" />
-        <item itemvalue="JUnit.VisitorTest.test" />
-        <item itemvalue="JUnit.TemplateMethodTest.test" />
-        <item itemvalue="JUnit.StrategyTest.test" />
+        <item itemvalue="Application.JoinThread" />
+        <item itemvalue="Application.DaemonThread" />
+        <item itemvalue="Application.StoppableThread" />
+        <item itemvalue="Application.SleepExample" />
+        <item itemvalue="Application.LambdaExample" />
       </list>
     </recent_temporary>
   </component>

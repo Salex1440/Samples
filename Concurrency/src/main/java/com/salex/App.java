@@ -1,4 +1,4 @@
-package org.example;
+package com.salex;
 
 /**
  * Hello world!
