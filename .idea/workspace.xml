@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created examples of working with Thread">
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/memory_model/CustomRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/memory_model/SeparateRunnablesExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/memory_model/SharedRunnableExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/MixedSynchronization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/MixedSynchronizationMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/MultiplyMonitorObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/Reentrance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/SharedMonitorObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/SharedMonitorObjectMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/StaticSynchronizedExchanger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/StaticSynchronizedExchangerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/SynchronizedExchanger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/SynchronizedExchangerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/SynchronizedLambda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,13 +105,13 @@
       <recent name="com.salex.behavioral.observer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SharedRunnableExample">
-    <configuration name="DaemonThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.DaemonThread" />
+  <component name="RunManager" selected="Application.SynchronizedLambda">
+    <configuration name="MixedSynchronizationMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.synchronized_examples.MixedSynchronizationMain" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.thread_examples.*" />
+          <option name="PATTERN" value="com.salex.synchronized_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JoinThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.JoinThread" />
+    <configuration name="SharedMonitorObjectMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.synchronized_examples.SharedMonitorObjectMain" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.thread_examples.*" />
+          <option name="PATTERN" value="com.salex.synchronized_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeparateRunnablesExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.memory_model.SeparateRunnablesExample" />
+    <configuration name="StaticSynchronizedExchangerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.synchronized_examples.StaticSynchronizedExchangerMain" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.memory_model.*" />
+          <option name="PATTERN" value="com.salex.synchronized_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SharedRunnableExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.memory_model.SharedRunnableExample" />
+    <configuration name="SynchronizedExchangerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.synchronized_examples.SynchronizedExchangerMain" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.memory_model.*" />
+          <option name="PATTERN" value="com.salex.synchronized_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +158,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StoppableThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.thread_examples.StoppableThread" />
+    <configuration name="SynchronizedLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.synchronized_examples.SynchronizedLambda" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.thread_examples.*" />
+          <option name="PATTERN" value="com.salex.synchronized_examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SharedRunnableExample" />
-        <item itemvalue="Application.SeparateRunnablesExample" />
-        <item itemvalue="Application.JoinThread" />
-        <item itemvalue="Application.DaemonThread" />
-        <item itemvalue="Application.StoppableThread" />
+        <item itemvalue="Application.SynchronizedLambda" />
+        <item itemvalue="Application.SharedMonitorObjectMain" />
+        <item itemvalue="Application.MixedSynchronizationMain" />
+        <item itemvalue="Application.StaticSynchronizedExchangerMain" />
+        <item itemvalue="Application.SynchronizedExchangerMain" />
       </list>
     </recent_temporary>
   </component>
@@ -399,7 +407,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="feature/concurrency" />
                       </list>
                     </value>
                   </entry>
@@ -526,6 +534,11 @@
           <url>file://$PROJECT_DIR$/Patterns/src/main/java/com/salex/behavioral/state/Lamp.java</url>
           <line>11</line>
           <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Concurrency/src/main/java/com/salex/synchronized_examples/SharedMonitorObject.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
