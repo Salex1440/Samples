@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created examples of a custom thread pool">
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/lock_example/CounterLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/lock_example/CounterLockMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/lock_example/TryLockMain.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created examples of using synchronizes key word">
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/executor_service/ExecutorServiceExamples.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +88,7 @@
       <recent name="com.salex.behavioral.observer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TryLockMain">
+  <component name="RunManager" selected="Application.ExecutorServiceExamples">
     <configuration name="CounterLockMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.salex.lock_example.CounterLockMain" />
       <module name="Concurrency" />
@@ -104,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SharedMonitorObjectMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.synchronized_examples.SharedMonitorObjectMain" />
+    <configuration name="ExecutorServiceExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.executor_service.ExecutorServiceExamples" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.synchronized_examples.*" />
+          <option name="PATTERN" value="com.salex.executor_service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExecutorServiceExamples" />
         <item itemvalue="Application.TryLockMain" />
         <item itemvalue="Application.CounterLockMain" />
         <item itemvalue="Application.ThreadPoolMain" />
         <item itemvalue="Application.SynchronizedLambda" />
-        <item itemvalue="Application.SharedMonitorObjectMain" />
       </list>
     </recent_temporary>
   </component>
