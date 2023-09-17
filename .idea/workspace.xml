@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created examples of Deadlock statement">
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/fork_join_pool_example/ForkJoinPoolMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/fork_join_pool_example/SortingTask.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of using ForkJoinPool">
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalCarrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalCarrierExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalHolderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/ThreadSignalingExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,39 +94,13 @@
       <recent name="com.salex.behavioral.observer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ForkJoinPoolMain">
-    <configuration name="DeadlockMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.deadlock_example.DeadlockMain" />
-      <module name="Concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.deadlock_example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SignalHolderExample">
     <configuration name="DeadlockPreventionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.salex.deadlock_example.prevention.DeadlockPreventionExample" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.salex.deadlock_example.prevention.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExecutorServiceExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.executor_service.ExecutorServiceExamples" />
-      <module name="Concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.executor_service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +121,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TryLockMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.lock_example.TryLockMain" />
+    <configuration name="SignalCarrierExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_signaling.SignalCarrierExample" />
       <module name="Concurrency" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.lock_example.*" />
+          <option name="PATTERN" value="com.salex.thread_signaling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignalHolderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_signaling.SignalHolderExample" />
+      <module name="Concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.thread_signaling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadSignalingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.thread_signaling.ThreadSignalingExample" />
+      <module name="Concurrency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.thread_signaling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SignalHolderExample" />
+        <item itemvalue="Application.SignalCarrierExample" />
+        <item itemvalue="Application.ThreadSignalingExample" />
         <item itemvalue="Application.ForkJoinPoolMain" />
         <item itemvalue="Application.DeadlockPreventionExample" />
-        <item itemvalue="Application.DeadlockMain" />
-        <item itemvalue="Application.ExecutorServiceExamples" />
-        <item itemvalue="Application.TryLockMain" />
       </list>
     </recent_temporary>
   </component>
@@ -392,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694852333300</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Created example of using ForkJoinPool">
+      <created>1694951049784</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1694951049784</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -419,7 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Separated permissions and roles" />
     <MESSAGE value="Created a new module. Added README.md." />
     <MESSAGE value="Created the Patterns module. Created a Singleton example" />
     <MESSAGE value="Created a Prototype example" />
@@ -444,7 +454,8 @@
     <MESSAGE value="Created examples of a custom thread pool" />
     <MESSAGE value="Created examples of managing ExecutorService interface" />
     <MESSAGE value="Created examples of Deadlock statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created examples of Deadlock statement" />
+    <MESSAGE value="Created example of using ForkJoinPool" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created example of using ForkJoinPool" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -543,11 +554,6 @@
           <url>file://$PROJECT_DIR$/Concurrency/src/main/java/com/salex/deadlock_example/prevention/RunnableTryLock2.java</url>
           <line>22</line>
           <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Concurrency/src/main/java/com/salex/fork_join_pool_example/ForkJoinPoolMain.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
