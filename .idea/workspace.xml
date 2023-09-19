@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created example of using ForkJoinPool">
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalCarrier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalCarrierExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/SignalHolderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Concurrency/src/main/java/com/salex/thread_signaling/ThreadSignalingExample.java" afterDir="false" />
+    <list default="true" id="7256f547-3930-4762-a268-48a19f892fb7" name="Changes" comment="Created examples of using the Lock interface">
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/src/main/java/com/salex/equals/ColoredPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/src/main/java/com/salex/equals/EqualsMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/src/main/java/com/salex/equals/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/src/main/java/com/salex/equals_hashcode/DefineEqualsWithoutHashcode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/src/main/java/com/salex/equals_hashcode/DefineHashcodeWithoutEquals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HashcodeEquals/src/test/java/com/salex/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,13 +98,13 @@
       <recent name="com.salex.behavioral.observer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SignalHolderExample">
-    <configuration name="DeadlockPreventionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.deadlock_example.prevention.DeadlockPreventionExample" />
-      <module name="Concurrency" />
+  <component name="RunManager" selected="Application.DefineEqualsWithoutHashcode">
+    <configuration name="DefineEqualsWithoutHashcode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.equals_hashcode.DefineEqualsWithoutHashcode" />
+      <module name="HashcodeEquals" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.deadlock_example.prevention.*" />
+          <option name="PATTERN" value="com.salex.equals_hashcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +112,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ForkJoinPoolMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.fork_join_pool_example.ForkJoinPoolMain" />
-      <module name="Concurrency" />
+    <configuration name="DefineHashcodeWithoutEquals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.equals_hashcode.DefineHashcodeWithoutEquals" />
+      <module name="HashcodeEquals" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.salex.fork_join_pool_example.*" />
+          <option name="PATTERN" value="com.salex.equals_hashcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EqualsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.salex.equals.EqualsMain" />
+      <module name="HashcodeEquals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.salex.equals.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,26 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSignalingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.salex.thread_signaling.ThreadSignalingExample" />
-      <module name="Concurrency" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.salex.thread_signaling.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DefineEqualsWithoutHashcode" />
+        <item itemvalue="Application.DefineHashcodeWithoutEquals" />
+        <item itemvalue="Application.EqualsMain" />
         <item itemvalue="Application.SignalHolderExample" />
         <item itemvalue="Application.SignalCarrierExample" />
-        <item itemvalue="Application.ThreadSignalingExample" />
-        <item itemvalue="Application.ForkJoinPoolMain" />
-        <item itemvalue="Application.DeadlockPreventionExample" />
       </list>
     </recent_temporary>
   </component>
