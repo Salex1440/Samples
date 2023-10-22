@@ -20,6 +20,7 @@
         <module>Exceptions</module>
         <module>Concurrency</module>
         <module>Annotation-examples</module>
+        <module>SpringAnnotationExample</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
