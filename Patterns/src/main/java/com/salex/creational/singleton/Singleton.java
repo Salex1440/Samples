@@ -1,5 +1,10 @@
 package com.salex.creational.singleton;
 
+/**
+ * Singleton (Одиночка) - порождающий шаблон проектирования.
+ * Гарантирует, что класс имеет только один экземпляр и предоставляет
+ * к нему глобальную точку доступа.
+ */
 public class Singleton {
 
     private static Singleton instance = null;

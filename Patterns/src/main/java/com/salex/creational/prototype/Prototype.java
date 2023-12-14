@@ -1,5 +1,10 @@
 package com.salex.creational.prototype;
 
+/**
+ * Prototype (Прототип) - порождающий шаблон проектирования.
+ * Определяет логику создания новых объектов с помощью копирования
+ * состояния объекта-прототипа.
+ */
 public abstract class Prototype {
 
     protected String context;
