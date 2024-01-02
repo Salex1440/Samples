@@ -21,6 +21,9 @@ package com.salex;
 public class Main {
     public static void main(String[] args) {
 
+        A a = new B();
+        B b = new B();
+
         // Static binding
         Object o = new Cat();
         overloadedMethod(o);
