@@ -1,9 +1,6 @@
 package com.salex;
 
-import java.util.ArrayList;
-import java.util.ConcurrentModificationException;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ConcurrentModificationExceptionExample {
     public static void main(String[] args) {
@@ -58,6 +55,17 @@ public class ConcurrentModificationExceptionExample {
             }
             else {
                 System.out.println(list.get(i++));
+            }
+        }
+
+        // Либо воспользоваться внутренним классом ListItr, но, при этом не вызывать методы класса ArrayList!!!
+        // И данный код также не потокобезопасен!
+        for (ListIterator<Integer> it = list.listIterator(); it.hasNext();) {
+            Integer next = it.next();
+            System.out.println(next);
+            if (next == 1) {
+                it.add(2);
+                System.out.println(it.previous() + " was added");
             }
         }
     }
