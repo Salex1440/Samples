@@ -40,15 +40,15 @@ public class Main {
     }
 
     public static void overloadedMethod(Object o) {
-        System.out.println(o.getClass() + " was passed");
+        System.out.println("Object: " + o.getClass() + " was passed");
     }
 
     public static void overloadedMethod(Animal o) {
-        System.out.println(o.getClass() + " was passed");
+        System.out.println("Animal: " + o.getClass() + " was passed");
     }
 
     public static void overloadedMethod(Cat o) {
-        System.out.println(o.getClass() + " was passed");
+        System.out.println("Cat: " + o.getClass() + " was passed");
     }
 
 }
