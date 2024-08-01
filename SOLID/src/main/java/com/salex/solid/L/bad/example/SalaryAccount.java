@@ -2,7 +2,7 @@ package com.salex.solid.L.bad.example;
 
 import java.math.BigDecimal;
 
-public class SalaryAccount extends Account {
+public class SalaryAccount implements Account {
     @Override
     public BigDecimal balance(String numberAccount) {
         //logic

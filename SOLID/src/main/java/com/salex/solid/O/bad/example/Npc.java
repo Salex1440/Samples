@@ -2,7 +2,13 @@ package com.salex.solid.O.bad.example;
 
 public class Npc {
 
-    public void greet(String npcType) {
+    private String npcType;
+
+    public Npc(String npcType) {
+        this.npcType = npcType;
+    }
+
+    public void greet() {
         if (npcType.equals("peasant")) {
             System.out.println("My lord");
         } else if (npcType.equals("blacksmoth")) {

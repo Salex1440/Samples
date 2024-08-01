@@ -2,13 +2,9 @@ package com.salex.solid.L.good.example;
 
 import java.math.BigDecimal;
 
-public class Account {
-    public BigDecimal balance(String numberAccount) {
-        //logic
-        return new BigDecimal(0);
-    }
+public interface Account {
+    BigDecimal balance(String numberAccount);
 
-    public void refill(String numberAccount, BigDecimal sum) {
-        //logic
-    }
+    void refill(String numberAccount, BigDecimal sum);
+
 }
