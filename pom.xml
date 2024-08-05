@@ -21,6 +21,7 @@
         <module>Concurrency</module>
         <module>Annotation-examples</module>
         <module>SpringAnnotationExample</module>
+        <module>transactional-propagation</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
