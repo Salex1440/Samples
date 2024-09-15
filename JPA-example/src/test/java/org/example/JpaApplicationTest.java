@@ -1,8 +1,6 @@
 package org.example;
 
 import jakarta.persistence.EntityManager;
-import junit.framework.TestCase;
-import org.example.entity.AB;
 import org.example.entity.TableA;
 import org.example.entity.TableB;
 import org.example.entity.TableC;
@@ -25,6 +23,14 @@ public class JpaApplicationTest {
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>(
         "postgres:16-alpine"
     );
+    @Autowired
+    private EntityManager em;
+    @Autowired
+    private TableARepo tableARepo;
+    @Autowired
+    private TableBRepo tableBRepo;
+    @Autowired
+    private TableCRepo tableCRepo;
 
     @BeforeAll
     static void beforeAll() {
@@ -43,18 +49,6 @@ public class JpaApplicationTest {
         registry.add("spring.datasource.password", postgres::getPassword);
     }
 
-    @Autowired
-    private EntityManager em;
-
-    @Autowired
-    private TableARepo tableARepo;
-
-    @Autowired
-    private TableBRepo tableBRepo;
-
-    @Autowired
-    private TableCRepo tableCRepo;
-
     @BeforeEach
     void setUp() {
         tableARepo.deleteAll();
@@ -64,9 +58,9 @@ public class JpaApplicationTest {
 
     @Test
     void testJpa() {
-        TableA a = new TableA(1L);
-        TableA a2 = new TableA(2L);
-        TableB b = new TableB(2L);
+        TableA a = new TableA(1L, "a");
+        TableA a2 = new TableA(2L, "a2");
+        TableB b = new TableB(2L, "b");
         TableC c1 = new TableC(1L, a);
         TableC c2 = new TableC(2L, b);
         TableC c3 = new TableC(3L, a2);
