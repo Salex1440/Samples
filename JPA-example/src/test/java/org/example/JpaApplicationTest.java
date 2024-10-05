@@ -4,9 +4,15 @@ import jakarta.persistence.EntityManager;
 import org.example.entity.TableA;
 import org.example.entity.TableB;
 import org.example.entity.TableC;
+import org.example.entity2.A;
+import org.example.entity2.B;
+import org.example.entity2.C;
 import org.example.repo.TableARepo;
 import org.example.repo.TableBRepo;
 import org.example.repo.TableCRepo;
+import org.example.repo2.ARepo;
+import org.example.repo2.BRepo;
+import org.example.repo2.CRepo;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -31,6 +37,12 @@ public class JpaApplicationTest {
     private TableBRepo tableBRepo;
     @Autowired
     private TableCRepo tableCRepo;
+    @Autowired
+    private ARepo aRepo;
+    @Autowired
+    private BRepo bRepo;
+    @Autowired
+    private CRepo cRepo;
 
     @BeforeAll
     static void beforeAll() {
@@ -72,6 +84,25 @@ public class JpaApplicationTest {
         tableCRepo.save(c2);
 
         System.out.println();
+    }
+
+    @Test
+    void testSOF() {
+        A a = new A(1L, null);
+        aRepo.save(a);
+        B b = new B(2L, null);
+        bRepo.save(b);
+        C c = new C(3L, null);
+        cRepo.save(c);
+        a.setB(b);
+        b.setC(c);
+        c.setA(a);
+
+        A save = aRepo.save(a);
+        B save2 = bRepo.save(b);
+        C save3 = cRepo.save(c);
+
+        System.out.println(save);
     }
 
 
